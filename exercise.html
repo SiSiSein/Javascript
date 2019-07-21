@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> chapter 02</title>
+    </head>
+    <body>
+        <h1>  The <span id = "spanTotalTeachers"> X </span> Teachers from Me Comptuer Centre</h1>
+        <ol>
+            <li id="teacher1"></li>
+            <li id="teacher2"></li>
+            <li id="teacher3"></li>
+            <li id="teacher4"></li>
+            <li id="teacher5"></li>
+        </ol>
+        <div id="divMessage"> </div>
+        <div id="divAverage"></div>
+        
+            <script>
+            //Create variables add the information.
+            "use strict";
+            /*Use the id selector.
+            get the elements id teacher, id divMessage, id spanTotalteachters.
+            assign values to the variables */
+            var elTeacher1 = document.getElementById("teacher1"),
+                elTeacher2 = document.getElementById("teacher2"),
+                elTeacher3 = document.getElementById("teacher3"),
+                elTeacher4 = document.getElementById("teacher4"),
+                elTeacher5 = document.getElementById("teacher5");
+            
+            
+            var elDivMessage = document.getElementById("divMessage"),
+                elSpanTotalTeachers = document.getElementById("spanTotalTeachers"),
+                eldivAverage = document.getElementById("divAverage");
+                
+            // assign array values to the variable.
+            var teacherName = [
+                "Daw Maw",
+                "Daw Myint Myint San",
+                "Daw Si Si Sein",
+                "Daw Cho Lat",
+                "Daw Ei Phyo Thein"],
+                teacherAge = [45,41,40,39,35],
+                teacherAgeTotal = teacherAge[0] + teacherAge[1] +
+                                teacherAge[2] + teacherAge[3] + teacherAge[4],
+                teacherAgeAverage = teacherAgeTotal/5;
+            // show result on the console.
+                console.log(teacherName);
+                console.log(teacherAge[0]);
+                console.log(teacherAgeTotal);
+
+                elTeacher1.textContent = teacherName[0] + " - Age " + teacherAge[0];
+                elTeacher2.textContent = teacherName[1] + " - Age " + teacherAge[1];
+                elTeacher3.textContent = teacherName[2] + " - Age " + teacherAge[2];
+                elTeacher4.textContent = teacherName[3] + " - Age " + teacherAge[3];
+                elTeacher5.textContent = teacherName[4] + " - Age " + teacherAge[4];
+
+                elDivMessage.textContent = " The total Ages of teachers is - " +
+                                            teacherAgeTotal;
+                eldivAverage.textContent= "Average Age of teacher is -" + teacherAgeAverage;
+                
+                                    
+                elSpanTotalTeachers.textContent = teacherName.length;
+            
+
+            
+            
+            </script>
+        
+    </body>
+</html>

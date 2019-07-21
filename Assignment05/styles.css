@@ -1,0 +1,62 @@
+body {
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:12pt;
+    
+}
+
+#divShowFight {
+    width: 100%;
+}
+
+#divLeftCol {
+    background-color: rgb(0,255,0);
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:14pt;
+    color: white;
+    width: 50%;
+    float: left;
+}
+
+#divRightCol {
+    background-color: #236598;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:14pt;
+    color: white;
+    width: 50%;
+    float: left;
+}
+
+#divCenterCol {    
+    width: 98%;
+    clear: both;
+}
+
+.fightTie {
+    background-color: yellow;
+    color: black;
+    padding: 1em;
+}
+
+.fightWin {
+    background-color: blue;
+    font-size:14pt;
+    color: white;
+    padding: 1em;    
+}
+
+.fightLose {
+    background-color: red;
+    font-size:14pt;
+    color: white;
+    color: white;
+    padding: 1em;
+}
+
+.textAlign {
+    text-align: left;    
+}
+
+.imageHeight {
+    height: 360px;
+}

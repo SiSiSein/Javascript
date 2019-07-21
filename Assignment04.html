@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chapter 04 Practice</title>
+</head>
+<body>
+    <h2>Me Computer Training</h2>
+    <div id="divMeCourse"></div>
+
+    <h2>Me Computer Training Time </h2>
+    <button id="btnMakeTime">Make a Time</button>
+    <div id="divMeTime"></div>
+
+    <script>
+        (function(){
+            "use strict";
+            
+            var course= ["Office","Graphics","AdvanceExcel","MYOB","AutoCAD","Python"];
+            
+            for (var i = 0; i<course.length; i++){
+                var randomCourse = Math.floor(Math.random()*course.length);
+                console.log(course[i]);
+                
+                var meTraining=document.getElementById("divMeCourse");
+                meTraining.innerHTML += "<p>Me Computer Training Course "+ course[randomCourse];}  
+
+
+            function fnTrainingTime() {
+                var times = ["7:9AM","9:11AM","11:1PM","1:3PM","3:5PM","5:7PM"];
+                var msg='';
+
+                for (var i=0; i<times.length; i++) {
+            
+                    msg += "Me Computer Training Time " + times[i] + '<br />';
+                    
+                
+                    var elMeTime = document.getElementById("divMeTime");
+                    elMeTime.innerHTML = msg;}
+            }   
+
+                var elBtnMakeTime = document.getElementById("btnMakeTime");
+                elBtnMakeTime.addEventListener("click", fnTrainingTime,false);
+        }());
+    </script>
+</body>
+    <!-- 
+        Name:           Si Si Sein
+        Email:          sisein70@gmail.com
+        Project:        Decisions & Loops
+        Description:    Look at iteration and looping construct
+        Date:           July 15, 2019
+    -->
+</html>
