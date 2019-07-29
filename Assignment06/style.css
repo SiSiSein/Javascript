@@ -1,0 +1,31 @@
+#formHero {
+    padding: 30px;
+    width: 30em;
+    line-height: 3em;
+    background-color: beige;
+    margin:auto;
+}
+
+label {
+    width: 6em;
+    display: block;
+    float: left;
+}
+
+input[type=button],
+input[type=reset] {
+    background-color:lightgreen;
+    color: #255123;
+    float: right;
+    margin: 0.25em;
+}
+
+.tableStyle,
+.tableStyle th,
+.tableStyle td {
+    width: 70%;
+    border: 1px solid black;
+    table-layout: fixed;
+    margin-top: 50px;
+    margin-left: 150px;
+}
