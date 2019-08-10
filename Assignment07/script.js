@@ -16,8 +16,8 @@
     // Define Arrays to hold the Droid Types and Droid Pictures
     var droidType = ["Astromech", "Battle", "Interrogation",
                     "Medical", "Protocol", "Scout","Pilot"],
-        droidPic = ["astromech.png", "battle.png", "interrogation.png",
-                    "medical.png", "protocol.png", "scout.png","pilot.png"];
+        droidPic = ["images/astromech.png", "images/battle.png", "images/interrogation.png",
+                    "images/medical.png", "images/protocol.png", "images/scout.png","images/pilot.png"];
 
     // Function to clear the Form and perform other cleanup actions
     function fnClearForm() {
@@ -47,7 +47,7 @@
             
             // Check if a Droid Name requires "A" or "An" grammer
             // "An" grammer needed for Droid Types of 0 and 2
-            if((randomDroid === 0) || (randomDroid === 1)) {
+            if((randomDroid === 0) || (randomDroid === 2)) {
                 // Display the Droid Type based on the Random Number
                 elNameType.innerHTML = "You are an " + droidType[randomDroid] + "Droid.";
                 // Display the Droid Picture in the empty <img>
