@@ -1,4 +1,4 @@
-(function() {
+$(function() {
     "use strict";
     //jQuery-based Object for the various <div> and <button>
     var $elBtnGetChar = $("#btnGetChar"),
@@ -49,4 +49,4 @@
     } // END fnGetChar()
 
     $elBtnGetChar.on("click", fnGetChar);
-}());
+});
