@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset = "UTF-8">
+    <title> chapter01 exercise</title>
+  </head>
+  <body>
+      <h1>JavaScript Objects</h1>
+      <script>
+            //Create anonymous function.
+        (function() {
+            "use strict";
+            /*Create variable to store the information needed.
+            assign value to the variable
+            add function to the variable */
+        
+            var centre = {
+                "m1":"Training",
+                "m2":"Sale",
+                "m3":"Service",
+                "street":"26 x 27",
+                "road":"73",
+                "phone":"09-426810648",
+              
+                "me":function() {
+                var address = this.street + ' between,' + ' '+ this.road + ' road';
+                return address;
+                },
+            };
+            /* JavaScript (often uses Methods on Objects.
+            Below, we used the .write() Method to output)
+            the value of the lastName Property of the person Object
+            to the document Object(the Viewport)*/
+
+            document.write('Welcom  ME Computer Centre');
+
+            document.write("<br/>");
+            document.write(centre.m1 + ','+' ');
+            document.write(centre.m2 + ','+' ');
+            document.write(centre.m3);
+
+            document.write("<br/>");
+            document.write('ME Contact, ' + centre.me());
+            
+            document.write("<br/>");
+            document.write(' Phone: '+ centre.phone)
+        }());
+            
+      
+      </script>
+  </body>
+  <!--
+    Name:           Si Si Sein
+    Email:          sisein70@gmail.com
+    Project:        Chapter 01
+    Description:    Look at JS Objects
+    Date:           June 16, 2019
+-->
+  </html>
